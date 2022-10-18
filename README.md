@@ -18,3 +18,12 @@ After experiment on ` git cherry -v 5.9-branch 6.0-branch |cat -n > ~/commits_on
 | 487 | 407e802048a7cf8c1dab6575fc9b828572e24af2 | Docs:   Use third-person singular verbs for function descriptions in   `author-template.php`, as per documentation standards. | 188.67          |
 | 531 | 943e956379dd935ad6b401669a4c76526172f594 | Feeds:   Use latest comment date for the `Last-Modified` header of comments feed.                                             | 182.66          |
 | 707 | a9c0050f9475857e80e813d8841052e0dde36efc | Post   WordPress 6.0.2 version bump.                                                                                          | 181.87          |
+
+### How to reproduce the issue?
+
+1) Install kubernetes
+2) ./deploy.sh apply
+3) docker run -it siege -c 100 -t 60S http://10.166.30.137:30080 # replace with your ip address
+
+
+
