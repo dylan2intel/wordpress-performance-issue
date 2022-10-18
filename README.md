@@ -25,5 +25,5 @@ After experiment on ` git cherry -v 5.9-branch 6.0-branch |cat -n > ~/commits_on
 2) ./deploy.sh apply
 3) docker run -it siege -c 100 -t 60S http://10.166.30.137:30080 # replace with your ip address
 
-
+Replace wordpress version yours or replace the image with your built in file ![wordpress-deployment.yaml](wordpress-deployment.yaml)
 
