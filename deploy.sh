@@ -49,7 +49,7 @@ function delete() {
 }
 
 function destory() {
-  read -r -p "${RED}!!!This option will destory all data, are you sure to continue? ${NC} [Y/n] " choice
+	read -r -p "!!!This option will destory all data, are you sure to continue? [Y/n]" choice
   case $choice in 
     [yY][eE][sS]|[yY]) 
       delete
